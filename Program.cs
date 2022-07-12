@@ -1,10 +1,9 @@
 ﻿Console.Write ("Введите число: ");
 int number = Convert.ToInt32 (Console.ReadLine());
-if (number % 2 == 0)
+int startnumber = 2;
+while (startnumber <= number)
 {
-    Console.WriteLine ($"{number } четное число.");   
+    Console.Write (startnumber + ",");
+    startnumber +=2;
 }
-else 
-{
-    Console.WriteLine ($"{number } нечетное число.");   
-}
+Console.Write("\b.");
